@@ -1,0 +1,9 @@
+<!-- <form action="/task/:id" method="patch">
+  <input type="text" placeholder="Enter a Task"  name="task[name]" value="">
+  <input type="submit" value="create task">
+</form> -->
+
+<%= form_for(@task) do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
